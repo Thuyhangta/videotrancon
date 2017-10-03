@@ -6,9 +6,27 @@ ul.footer-menu li {
 	display: inline-block;
 	padding-left: 10px;
 }
+.box{
+    background-image: url(Ha_Long_Bay.jpg);
+    width: 100%;
+	height: 660px;
+    padding:10px;
+    margin:0 auto;
+    position:relative;
+}
+ 
+.box img{
+    margin:auto;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    width: 10%;
+    height: 12%;
+}
+
 /*#footerphai{
 	width: 85%;
 }
 #footertrai{
 	width: 15%;
 }
+

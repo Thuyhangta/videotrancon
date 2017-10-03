@@ -28,79 +28,216 @@
      .jumbotron {
       margin-bottom: 0;
     }
+     
+             /*nav bar*/
+        /*logo*/
+        .navbar-brand>img {
+            position: absolute;
+            left:calc(50% - 78px);
+        }
+        /*2 ben*/
+        .navbar-nav {
+            padding-top: 15px;}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            padding: 10px;
+            z-index: 1;
+            background: transparent;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            border-color: transparent;
+            font-size: 15px;
+        }
+
+        /*menu*/
+        .dropdown ul {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown li {
+            display: block;
+            width: 150px;
+            height: 50px;
+
+        }
+        .dropdown li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 16px;
+            text-align: justify;
+        }
+        .dropdown a:hover {
+            background: transparent;
+            color: white ;
+        }
+        .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+            background-color: transparent;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            color: white;
+        }
+
+        /*==Dropdown Menu==*/
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+        }
+        .dropdown li {
+            position: relative;
+        }
+        .dropdown li:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown .dropdown-menu li a:hover  {
+            background-color: transparent;
+            color: cornflowerblue;
+        }
+        .dropdown li:hover  {
+            display: block;
+        }
+        .dropdown-menu li {
+            margin-left: 0 !important;
+        }
+        /*Style cho search*/
+        input[type=text] {
+            width: 180px;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 15px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-right: 20px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+            color: royalblue;
+        }
    
     /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
+    
   </style>
 </head>
 <body>
-<br>
-
-<p style="margin-left: 9%; font-size: 25px;"><mark><b>SOUTH EAST ASIA</b> </mark> </p>
-
+	<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Video <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><b><a href="#">Adventure Travel</a></b></li>
+                        <li><b><a href="#">Food and drink</a></b></li>
+                        <li><b><a href="#">Journey</a></b></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destination <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><b><a href="#">South East Asia</a></b></li>
+                        <li><b><a href="#">China</a></b></li>
+                        <li><b><a href="#">Taiwan</a></b></li>
+                        <li><b><a href="#">HongKong</a></b></li>
+                        <li><b><a href="#">Korea</a></b></li>
+                        <li><b><a href="#">Japan</a></b></li>
+                        <li><b><a href="#">India</a></b></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bookings <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><b><a href="#">Hotels</a></b></li>
+                        <li><b><a href="#">Flights</a></b></li>
+                    </ul>
+                </li>
+            </ul>
+            <a style="padding: 0" class="navbar-brand" href="#"><img src="anh2.png" height="72" width="156"/></a>
+            <ul  class="nav navbar-nav navbar-right">
+                <li><form>
+                    <input type="text" name="search" placeholder="Search..">
+                </form></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	<div class="box">
+		<a href=""><img src="play.png"></a>
+	</div>
+<p style="margin-left: 9%; font-size: 25px;"><b>SOUTH EAST ASIA</b></p>
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/MCeQLvk3ZCA" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/MCeQLvk3ZCA" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/G5e3HTEewfE" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/G5e3HTEewfE" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/4Q_KGoiXX2E" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/4Q_KGoiXX2E" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
 </div><br><br>
 
-<p style="margin-left: 9%; font-size: 25px;"><mark><b>CHINA & HONGKONG & TAIWAIN</b> </mark> </p>
+	<hr style="color: #959aa0; width: 90%; " text-center>
+<p style="margin-left: 9%; font-size: 25px;"><b>CHINA & HONGKONG & TAIWAIN</b></p>
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/e-9bn2QduXM" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/e-9bn2QduXM" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/xF-ocvvLE5U" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/xF-ocvvLE5U" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/XryB_82YAMo" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/XryB_82YAMo" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
 </div><br><br>
 
-<p style="margin-left: 9%; font-size: 25px;"><mark><b>JAPAN & KOREA</b> </mark></p>
+	<hr style="color: #959aa0; width: 90%; " text-center>
+<p style="margin-left: 9%; font-size: 25px;"><b>JAPAN & KOREA</b></p>
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/KBCuJ_2wWPU" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/KBCuJ_2wWPU" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/qhlrI_16Gvw" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/qhlrI_16Gvw" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/jgNpXQ_uG9w" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/jgNpXQ_uG9w" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
 </div><br><br>
 
-<p style="margin-left: 9%; font-size: 25px;"><mark><b>INDIA</b> </mark></p>
+	<hr style="color: #959aa0; width: 90%; " text-center>
+<p style="margin-left: 9%; font-size: 25px;"><b>INDIA</b></p>
 <div class="container">    
   <div class="row">
     <div class="col-sm-4">
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/cKm6CWej3rQ" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/cKm6CWej3rQ" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/nb9ny8dK9Pk" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/nb9ny8dK9Pk" frameborder="0" allowfullscreen></iframe></div>
     </div>
     <div class="col-sm-4"> 
-        <div class="panel-body"><iframe width="330" height="220" src="https://www.youtube.com/embed/5KxPUv0hlBY" frameborder="0" allowfullscreen></iframe></div>
+        <div class="panel-body"><iframe width="380" height="210" src="https://www.youtube.com/embed/5KxPUv0hlBY" frameborder="0" allowfullscreen></iframe></div>
     </div>
   </div>
 </div><br><br>
 
 <footer>
+			<hr style="color: #959aa0; width: 100%; " text-center>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-lg-2" id="so1">
@@ -416,7 +553,7 @@
 					<hr style="color: #959aa0; width: 90%; " text-center>
 					<div class="pull-left" id="footertrai">
 					<div class="col-lg-3">
-							<img src="C:\Users\khung long beo i\Desktop\footer\anh.png" width="100px" style="margin-left: 60px;">
+							<img src="anh.png" width="100px" style="margin-left: 60px;">
 							<p></p></div>
 						</div>
 					<div>
@@ -438,9 +575,9 @@
 							    </ul>
 							    </div>
 						<div class="col-lg-2">
-								<a href=""><img src="C:\Users\khung long beo i\Desktop\footer\pin.png" width="30px"></a>
-							    <a href=""><img src="C:\Users\khung long beo i\Desktop\footer\tw.png" width="30px"></a> 
-							    <a href=""><img src="C:\Users\khung long beo i\Desktop\footer\fb.png" width="30px"></a> 	
+								<a href=""><img src="pin.png" width="30px"></a>
+							    <a href=""><img src="tw.png" width="30px"></a> 
+							    <a href=""><img src="fb.png" width="30px"></a> 	
 								
 								</div>
 							    </div>
